@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<!-- Microsoft Windows 10.0.26200 -->
-	<!-- Expressium LivingDoc 1.5.0.0 -->
+	<!-- Expressium LivingDoc 1.6.0.0 -->
 	<!-- Reqnroll 3.3.3 -->
 	<head>
 		<meta charset="UTF-8">
@@ -13,26 +13,24 @@
     :root {
         
         /* Bootstrap Grayscale */
-        --bs-gray-075: #fdfdfe;
-        --bs-gray-075: #fefefe;
-        --bs-gray-090: #f9fafb;
+        --bs-gray-010: #fefefe;
+        --bs-gray-050: #fafbfc;
         --bs-gray-100: #f8f9fa;
-        --bs-gray-125: #f6f7f8;
-        --bs-gray-150: #f1f3f5;
+        --bs-gray-150: #eceff2;
         --bs-gray-200: #e9ecef;
         --bs-gray-300: #dee2e6;
         --bs-gray-400: #ced4da;
-        --bs-gray-450: #bec5cc;
         --bs-gray-500: #adb5bd;
-        --bs-gray-600: #6c757d;
-        --bs-gray-650: #565d63; /* 5b636a */;
+        --bs-gray-550: #969696;
+        --bs-gray-600: #6c757d; 
+        --bs-gray-650: #5b626a;
         --bs-gray-700: #495057;
         --bs-gray-800: #343a40;
         --bs-gray-900: #212529;
 
         /* Header */
-        --color-text-header: var(--bs-gray-900);
-        --color-bg-header: #dfe7f2; /* #d4dfec */
+        --color-text-header: var(--bs-gray-800);
+        --color-bg-header: #dfe7f2;
 
         /* Footer */
         --color-text-footer: var(--bs-gray-600);
@@ -43,34 +41,35 @@
         --color-bg-navigation: var(--bs-gray-100);
         --color-bg-navigation-indicator: var(--bs-gray-500);
 
-        /* Tables */
-        --color-bg-table-header: var(--bs-gray-100);
-        --color-border-table-header: var(--bs-white);
-
-        /* Groups */
-        --color-bg-group: var(--bs-gray-075);
-        --color-border-group: #ECECEC;
-
-        /* Outlines */
-        --color-border-grid: #ECECEC;
-        --color-border-splitter: #ECECEC;
-
-        /* Surfaces */
-        --color-bg-hover: #F5F8FC;
-        --color-bg-selected: #EEF4FA;
+        /* Splitter */
+        --color-border-splitter: var(--bs-gray-200);
 
         /* Scrollbars */
-        --color-text-scrollbar: #969696;
+        --color-text-scrollbar: var(--bs-gray-550);
         --color-bg-scrollbar: var(--bs-white);
 
+        /* Grids */
+        --color-text-grid-header: var(--bs-gray-800);
+        --color-bg-grid-header: var(--bs-gray-100);
+        --color-border-grid-header: var(--bs-white);
+        --color-border-grid: var(--bs-gray-150);
+        --color-bg-grid-hover: #F5F8FC;
+        --color-bg-grid-selected: #F2F6FA;
+
+        /* Groups */
+        --color-bg-group: var(--bs-gray-010);
+        --color-bg-group-filter: var(--bs-gray-010);
+        --color-border-group: var(--bs-gray-200);
+
         /* Texts */
-        --color-text: var(--bs-gray-900);
+        --color-text-body: var(--bs-gray-900);
         --color-text-darkgray: var(--bs-gray-700);
         --color-text-gray: var(--bs-gray-600);
 
         /* Special Texts */
         --color-text-keyword: #25576b;
         --color-text-link: #295f75;
+        --color-text-link: #355B6A; /* Darker keyword color for links */    
 
         /* Tags */
         --color-text-tag: #338689;
@@ -78,44 +77,38 @@
 
         /* Badges */
         --color-text-badge: var(--bs-white);
-        --color-bg-badge: #969696;
+        --color-bg-badge: var(--bs-gray-550);
 
         /* Buttons */
         --color-text-button: var(--bs-gray-900);
-        --color-bg-button: var(--bs-gray-090);
+        --color-bg-button: var(--bs-gray-050);
         --color-border-button: var(--bs-gray-400);
         --color-text-button-inactive: var(--bs-gray-600);
-        --color-bg-button-inactive: var(--bs-gray-090);
+        --color-bg-button-inactive: var(--bs-gray-050);
         --color-border-button-inactive: var(--bs-gray-300);
         --color-text-button-hover: var(--bs-gray-900);
-        --color-bg-button-hover: var(--bs-gray-100);
+        --color-bg-button-hover: var(--bs-gray-050);
         --color-border-button-hover: var(--bs-gray-500);
-        --color-bg-button-selected: var(--color-bg-selected);
+        --color-bg-button-selected: var(--color-bg-grid-selected);
 
         /* Status colors */
-        --color-passed: #47A64E;
-        --color-incomplete: #F7C21A;
-        --color-failed: #E84330;
-        --color-skipped: #9E9E9E;
-
-        --color-passed: #45A14B;
-        --color-incomplete: #F5C01A;
-        --color-failed: #E6422F;
-        --color-skipped: #9C9C9C;
-
-        --color-total: var(--bs-gray-900);
+        --color-passed: #33a351;
+        --color-incomplete: #FBBC05;
+        --color-failed: #EA4335;
+        --color-skipped: #9AA0A6;
+        --color-total: var(--bs-gray-800);
 
         /* Status backgrounds */
-        --color-bg-passed: #EAF6EB;
-        --color-bg-incomplete: #FFF6D8;
-        --color-bg-failed: #FAE8E5;
-        --color-bg-skipped: #F0F2F4;
+        --color-bg-passed: #E6F4EA;
+        --color-bg-incomplete: #FEF7E0;
+        --color-bg-failed: #FCE9E7;
+        --color-bg-skipped: #F1F3F4;
 
         /* Status texts */
-        --color-text-passed: #2C5F30;
-        --color-text-incomplete: #8A6500;
-        --color-text-failed: #9E2B21;
-        --color-text-skipped: var(--bs-gray-700);
+        --color-text-passed: #137333;
+        --color-text-incomplete: #7A4F01;
+        --color-text-failed: #A50E0E;
+        --color-text-skipped: #3C4043;
     }
    
     body, html {
@@ -123,12 +116,12 @@
         margin: 0;
         overflow: hidden;
         font-size: 16px;
-        color: var(--color-text);
+        color: var(--color-text-body);
         /* font-family: system-ui, "Segoe UI Variable Small", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     }
    
     header {
-        padding: 0.50em 1.00em;
+        padding: 0.625em 1.00em;
         color: var(--color-text-header);
         background-color: var(--color-bg-header);
     }
@@ -139,7 +132,7 @@
     }
 
     .project-date {
-        color: var(--color-text-darkgray);      
+        color: var(--color-text-darkgray);       
         padding-left: 0.125em;
     }
 
@@ -176,7 +169,7 @@
 
     .splitter-wrapper {
         display: flex;
-        height: calc(100% - 9.75em); /* Adjust for header and footer height */
+        height: calc(100% - 10.00em); /* Adjust for header and footer height */
         flex-direction: row; /* Change to row for vertical splitter */
         border-bottom: 1px solid var(--color-border-splitter);
     }
@@ -236,7 +229,7 @@
     }
 
     .filter-group {
-        background-color: var(--color-bg-group);
+        background-color: var(--color-bg-group-filter);
         padding: 0.5em;
         margin-top: 0.125em;
         margin-bottom: 0.50em;
@@ -256,7 +249,7 @@
         box-sizing: border-box;
         border-width: 1px;
         outline: none;
-        background-color: var(--color-bg-group);
+        background-color: var(--color-bg-group-filter);
         border: hidden;
     }
 
@@ -272,8 +265,9 @@
     }
 
     th {
-        background-color: var(--color-bg-table-header);
-        border: 1px solid var(--color-border-table-header);
+        background-color: var(--color-bg-grid-header);
+        border: 1px solid var(--color-border-grid-header);
+        color: var(--color-text-grid-header);
         font-weight: 600;
     }
     
@@ -288,7 +282,7 @@
 
     table.list-view tr:hover,
     table.tree-view tr:hover td.grid-border {
-        background-color: var(--color-bg-hover);
+        background-color: var(--color-bg-grid-hover);
     }
 
     table.list-view th,
@@ -296,23 +290,24 @@
         padding-left: 6px;
         padding-right: 6px;
     }
-   
+          
+    table.tree-view th,
     table.tree-view td {
         padding-left: 2px;
         padding-right: 2px;
     }
 
-    table.tree-view td.grid-border { 
-        padding-left: 4px;
-        padding-right: 2px;
-    }
-
     table.tree-view tr.active td.grid-border {
-        background-color: var(--color-bg-selected);
+        background-color: var(--color-bg-grid-selected);
     }
 
     table.list-view tr.active {
-        background-color: var(--color-bg-selected);
+        background-color: var(--color-bg-grid-selected);
+    }
+
+    table.tree-view td.grid-border {
+        padding-left: 4px;
+        padding-right 4px;
     }
 
     /* Buttons */
@@ -357,11 +352,6 @@
         background-color: var(--color-bg-button-selected);
     }
 
-    .grid-folder {
-        text-align: center;
-        width: 1.5em;
-    }
-
     .grid-folder-name {
         color: var(--color-text-gray);
         font-weight: 500;
@@ -386,11 +376,11 @@
         color: var(--color-text-gray);
         cursor: pointer;
         text-align: center;
-        width: 1.5em;
+        width: 1.25em;
     }
     
     .grid-indent {
-        width: 1.25em;
+        width: 1.75em;
     }
 
     .page-name {
@@ -415,12 +405,12 @@
     }
 
     .chart-filter {
-        padding: 1.0em 1.0em;
-        padding-bottom: 0.5em;
+        padding: 1.250em 1.250em;
+        padding-bottom: 0.75em;
         background-color: var(--color-bg-group);
         border-radius: 1.00em;
         border: 1px solid var(--color-border-group);
-        margin-bottom: 0.50em;
+        margin-bottom: 0.6250em;
     }
 
     .chart-status {
@@ -861,13 +851,15 @@
     }
 
     .analytics-trends,
-    .analytics-healths {
+    .analytics-history,
+    .properties-section {
         padding-left: 16px;
         padding-right: 16px;
         margin: auto;
     }
 
-    .analytics-list {
+    .analytics-list,
+    .properties-list {
         width: 100%;
     }
 
@@ -883,7 +875,7 @@
     }
 
     .analytics-list td {
-        border: 1px solid var(--color-border-table-header);
+        border: 1px solid var(--color-border-grid-header);
     }
 
     .card {
@@ -1003,15 +995,27 @@
     
 		</script>
 		<script>
+        function loadProperties() {
+            var properties = document.getElementById("properties").innerHTML;
+            document.getElementById('splitter-right').innerHTML = properties;
+
+            clearActiveListItems();
+
+            document.getElementById("splitter-right").scrollTop = 0;
+        }
+    
+		</script>
+		<script>
         function filterView() {
             var navLinkActive = document.querySelectorAll('a.navigation-link.active');
             if (navLinkActive.length > 0) {
-                name = navLinkActive[0].textContent.toLowerCase();
+                var name = navLinkActive[0].textContent.toLowerCase();
 
                 if (name == "overview") {
                     filterDataByRole("scenario");
                     filterDataFeatures();
                     filterDataFolders();
+                    filterDataFolderDescendants();
                 }
                 else if (name == "features") {
                     filterDataByRole("feature");
@@ -1035,15 +1039,7 @@
             var table = document.getElementById("table-list");
             var tr = table.getElementsByTagName("tr");
 
-            var statuses = [];
-            var prefilters = document.getElementsByTagName("button");
-            for (var i = 0; i < prefilters.length; i++) {
-                var prefilter = prefilters[i].getAttribute("data-prefilter");
-                var active = prefilters[i].className.includes(" active");
-                if (active) {
-                    statuses.push(prefilter);
-                }
-            }
+            var statuses = getActivePrefilters();
 
             for (var i = 0; i < tr.length; i++) {
                 var role = tr[i].getAttribute("data-role");
@@ -1083,6 +1079,13 @@
 
                 tr[i].style.display = found ? "" : "none";
             }
+        }
+    
+		</script>
+		<script>
+        function getActivePrefilters() {
+            var buttons = document.querySelectorAll('button[data-prefilter].active');
+            return Array.from(buttons, button => button.getAttribute("data-prefilter"));
         }
     
 		</script>
@@ -1263,6 +1266,53 @@
     
 		</script>
 		<script>
+        function filterDataFolderDescendants() {
+            const table = document.getElementById("table-list");
+            if (!table) return;
+
+            // Get all collapsed folder paths
+            const collapsedFolders = Array.from(
+                table.querySelectorAll('[data-role="folder"][data-collapse="true"]'),
+                folder => folder.dataset.name
+            );
+
+            // Check if a path is inside a collapsed folder
+            const isInsideCollapsedFolder = path =>
+                collapsedFolders.some(folder => path?.startsWith(folder));
+
+            const hiddenFeatureIds = new Set();
+
+            // Hide features inside collapsed folders
+            for (const feature of table.querySelectorAll('[data-role="feature"]')) {
+                if (isInsideCollapsedFolder(feature.dataset.parent)) {
+                    feature.style.display = "none";
+                    hiddenFeatureIds.add(feature.dataset.featureid);
+                }
+            }
+
+            // Hide subfolders inside collapsed folders
+            for (const folder of table.querySelectorAll('[data-role="folder"]')) {
+                const path = folder.dataset.name;
+
+                const shouldHide = collapsedFolders.some(parent =>
+                    path !== parent && path.startsWith(parent)
+                );
+
+                if (shouldHide) {
+                    folder.style.display = "none";
+                }
+            }
+
+            // Hide scenarios belonging to hidden features
+            for (const scenario of table.querySelectorAll('[data-role="scenario"]')) {
+                if (hiddenFeatureIds.has(scenario.dataset.featureid)) {
+                    scenario.style.display = "none";
+                }
+            }
+        }
+    
+		</script>
+		<script>
         function sortTableByColumn(n) {
             var table = document.getElementById("table-grid");
             var count = 0;
@@ -1384,24 +1434,30 @@
 		</script>
 		<script>
         function loadCollapseAll() {
-            var table = document.getElementById("table-list");
-            var tr = table.getElementsByTagName("tr");
+            const rows = document.querySelectorAll('#table-list tr[data-role="feature"], #table-list tr[data-role="folder"]');
 
-            for (var i = 0; i < tr.length; i++) {
-                var role = tr[i].getAttribute("data-role");
+            for (var i = 0; i < rows.length; i++) {
+                var cell = rows[i].querySelector('td[data-collapse="false"]');
 
-                if (role == "feature") {
-                    var cells = tr[i].getElementsByTagName("td");
+                if (!cell) 
+                    continue;
 
-                    for (var a = 0; a < cells.length; a++) {
-                        var collapse = cells[a].getAttribute('data-collapse');
+                cell.innerHTML = "<span class='bi bi-chevron-right'></span>";
+                cell.setAttribute('data-collapse', 'true');
+                rows[i].setAttribute('data-collapse', 'true');
+            }
 
-                        if (collapse == "false") {
-                            cells[a].innerHTML = "<span class='bi bi-chevron-right'></span>";
-                            cells[a].setAttribute('data-collapse', 'true');
-                            tr[i].setAttribute('data-collapse', 'true');
-                        }
-                    }
+            for (var i = 0; i < rows.length; i++) {
+                var cell = rows[i].querySelector('td[data-collapse="true"]');
+
+                if (!cell) 
+                    continue;
+
+                var role = rows[i].getAttribute("data-role");
+                if (role == "folder") {
+                    cell.innerHTML = '<span class="bi bi-chevron-down"></span>';
+                    cell.dataset.collapse = 'false';
+                    rows[i].dataset.collapse = 'false';
                 }
             }
 
@@ -1411,25 +1467,17 @@
 		</script>
 		<script>
         function loadExpandAll() {
-            var table = document.getElementById("table-list");
-            var tr = table.getElementsByTagName("tr");
+            const rows = document.querySelectorAll('#table-list tr[data-role="feature"], #table-list tr[data-role="folder"]');
 
-            for (var i = 0; i < tr.length; i++) {
-                var role = tr[i].getAttribute("data-role");
+            for (let i = 0; i < rows.length; i++) {
+                const cell = rows[i].querySelector('td[data-collapse="true"]');
 
-                if (role == "feature") {
-                    var cells = tr[i].getElementsByTagName("td");
+                if (!cell)
+                    continue;
 
-                    for (var a = 0; a < cells.length; a++) {
-                        var collapse = cells[a].getAttribute('data-collapse');
-
-                        if (collapse == "true") {
-                            cells[a].innerHTML = "<span class='bi bi-chevron-down'></span>";
-                            cells[a].setAttribute('data-collapse', 'false');
-                            tr[i].setAttribute('data-collapse', 'false');
-                        }
-                    }
-                }
+                cell.innerHTML = '<span class="bi bi-chevron-down"></span>';
+                cell.dataset.collapse = 'false';
+                rows[i].dataset.collapse = 'false';
             }
 
             filterView();
@@ -1452,13 +1500,9 @@
 		</script>
 		<script>
         function clearAllfilters() {
-            var prefilters = document.getElementsByTagName("button");
+            var prefilters = document.querySelectorAll('button[data-prefilter].active');
             for (var i = 0; i < prefilters.length; i++) {
-                var prefilter = prefilters[i].getAttribute("data-prefilter");
-                var active = prefilters[i].className.includes(" active");
-                if (active) {
-                    prefilters[i].className = prefilters[i].className.replace(" active", "");
-                }
+                prefilters[i].classList.remove('active');
             }
 
             var input = document.getElementById("filter-by-keywords");
@@ -1698,7 +1742,6 @@
 					<table id="table-grid" class="tree-view">
 						<tbody id="table-list">
 							<tr>
-								<td class="grid-folder">📂</td>
 								<td class="grid-border" colspan="9">
 									<span class="grid-folder-name">Expressium.Coffeeshop.Web.API.Tests</span>
 								</td>
@@ -1708,26 +1751,33 @@
 								</td>
 							</tr>
 							<tr data-name="Features" data-role="folder">
-								<td></td>
-								<td class="grid-folder">📂</td>
-								<td class="grid-border" colspan="9">
+								<td data-collapse="false" class="grid-toggle" title="Toggle Folder" onclick="loadCollapse(this);">
+									<span class="bi bi-chevron-down"></span>
+								</td>
+								<td class="grid-border grid-indent">
+									<span>📂</span>
+								</td>
+								<td class="grid-border" colspan="8">
 									<span class="grid-folder-name">Features</span>
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
 							<tr data-name="Features\Authentication" data-role="folder">
-								<td></td>
-								<td></td>
-								<td class="grid-folder">📂</td>
-								<td class="grid-border" colspan="8">
+								<td class="grid-indent"></td>
+								<td data-collapse="false" class="grid-toggle" title="Toggle Folder" onclick="loadCollapse(this);">
+									<span class="bi bi-chevron-down"></span>
+								</td>
+								<td class="grid-border grid-indent">
+									<span>📂</span>
+								</td>
+								<td class="grid-border" colspan="7">
 									<span class="grid-folder-name">Authentication</span>
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="Features\Authentication" data-name="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-role="feature" data-featureid="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" onclick="loadFeature(this);">
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="Features\Authentication" data-name="c7932024-74e8-4def-9a4e-2b4a620941e8" data-role="feature" data-featureid="c7932024-74e8-4def-9a4e-2b4a620941e8" onclick="loadFeature(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td data-collapse="false" class="grid-toggle" title="Toggle Feature" onclick="loadCollapse(this);">
 									<span class="bi bi-chevron-down"></span>
 								</td>
@@ -1737,11 +1787,10 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-role="scenario" data-tags="Login @Failed @TA-1000 @Login @BusinessTests @TA-1001 @Done @Regressed  Features/Authentication/Login.feature" data-featureid="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-scenarioid="04bb23f8b9900f55b0c7615863c762d5" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="c7932024-74e8-4def-9a4e-2b4a620941e8" data-role="scenario" data-tags="Login @Failed @TA-1000 @Login @BusinessTests @TA-1001 @Done @Regressed  Features/Authentication/Login.feature" data-featureid="c7932024-74e8-4def-9a4e-2b4a620941e8" data-scenarioid="04bb23f8b9900f55b0c7615863c762d5" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="6">
 									<span class="bi bi-x-circle-fill color-failed status-symbol"></span>
@@ -1749,11 +1798,10 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-role="scenario" data-tags="Login @Incomplete @TA-1000 @Login @BusinessTests @TA-1002 @Review @Invalid  Features/Authentication/Login.feature" data-featureid="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-scenarioid="171dbe8822403e548d9f65c673adcfa4" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="c7932024-74e8-4def-9a4e-2b4a620941e8" data-role="scenario" data-tags="Login @Incomplete @TA-1000 @Login @BusinessTests @TA-1002 @Review @Invalid  Features/Authentication/Login.feature" data-featureid="c7932024-74e8-4def-9a4e-2b4a620941e8" data-scenarioid="171dbe8822403e548d9f65c673adcfa4" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="6">
 									<span class="bi bi-exclamation-circle-fill color-incomplete status-symbol"></span>
@@ -1762,18 +1810,21 @@
 								<td class="grid-border align-right"></td>
 							</tr>
 							<tr data-name="Features\Inquiries" data-role="folder">
-								<td></td>
-								<td></td>
-								<td class="grid-folder">📂</td>
-								<td class="grid-border" colspan="8">
+								<td class="grid-indent"></td>
+								<td data-collapse="false" class="grid-toggle" title="Toggle Folder" onclick="loadCollapse(this);">
+									<span class="bi bi-chevron-down"></span>
+								</td>
+								<td class="grid-border grid-indent">
+									<span>📂</span>
+								</td>
+								<td class="grid-border" colspan="7">
 									<span class="grid-folder-name">Inquiries</span>
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="Features\Inquiries" data-name="30c98ebb-9649-47b8-b21e-93b570faf87e" data-role="feature" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" onclick="loadFeature(this);">
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="Features\Inquiries" data-name="2de0e161-a1d8-4321-9c7a-7194004b7870" data-role="feature" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" onclick="loadFeature(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td data-collapse="false" class="grid-toggle" title="Toggle Feature" onclick="loadCollapse(this);">
 									<span class="bi bi-chevron-down"></span>
 								</td>
@@ -1783,11 +1834,10 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="30c98ebb-9649-47b8-b21e-93b570faf87e" data-role="scenario" data-tags="Contact Us @Passed @TA-3000 @ContactUs @BusinessTests @TA-3001 @Done  Features/Inquiries/ContactUs.feature" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="b4285752d8f11e56b894334546b78c7f" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="2de0e161-a1d8-4321-9c7a-7194004b7870" data-role="scenario" data-tags="Contact Us @Passed @TA-3000 @ContactUs @BusinessTests @TA-3001 @Done  Features/Inquiries/ContactUs.feature" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="b4285752d8f11e56b894334546b78c7f" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="6">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
@@ -1795,11 +1845,10 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="30c98ebb-9649-47b8-b21e-93b570faf87e" data-role="scenario" data-tags="Contact Us @Skipped @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore  Features/Inquiries/ContactUs.feature" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="2de0e161-a1d8-4321-9c7a-7194004b7870" data-role="scenario" data-tags="Contact Us @Skipped @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore  Features/Inquiries/ContactUs.feature" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="6">
 									<span class="bi bi-dash-circle-fill color-skipped status-symbol"></span>
@@ -1807,11 +1856,10 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="30c98ebb-9649-47b8-b21e-93b570faf87e" data-role="scenario" data-tags="Contact Us @Incomplete @TA-3000 @ContactUs @BusinessTests @TA-3003 @Review @Invalid  Features/Inquiries/ContactUs.feature" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="64417f9cf1024556af46f2041fc7334b" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="2de0e161-a1d8-4321-9c7a-7194004b7870" data-role="scenario" data-tags="Contact Us @Incomplete @TA-3000 @ContactUs @BusinessTests @TA-3003 @Review @Invalid  Features/Inquiries/ContactUs.feature" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="64417f9cf1024556af46f2041fc7334b" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="6">
 									<span class="bi bi-exclamation-circle-fill color-incomplete status-symbol"></span>
@@ -1820,29 +1868,36 @@
 								<td class="grid-border align-right"></td>
 							</tr>
 							<tr data-name="Features\Products" data-role="folder">
-								<td></td>
-								<td></td>
-								<td class="grid-folder">📂</td>
-								<td class="grid-border" colspan="8">
+								<td class="grid-indent"></td>
+								<td data-collapse="false" class="grid-toggle" title="Toggle Folder" onclick="loadCollapse(this);">
+									<span class="bi bi-chevron-down"></span>
+								</td>
+								<td class="grid-border grid-indent">
+									<span>📂</span>
+								</td>
+								<td class="grid-border" colspan="7">
 									<span class="grid-folder-name">Products</span>
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
 							<tr data-name="Features\Products\Notifications" data-role="folder">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td class="grid-folder">📂</td>
-								<td class="grid-border" colspan="7">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td data-collapse="false" class="grid-toggle" title="Toggle Folder" onclick="loadCollapse(this);">
+									<span class="bi bi-chevron-down"></span>
+								</td>
+								<td class="grid-border grid-indent">
+									<span>📂</span>
+								</td>
+								<td class="grid-border" colspan="6">
 									<span class="grid-folder-name">Notifications</span>
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="Features\Products\Notifications" data-name="02701e4f-9f42-4442-ab6c-e209b78523ee" data-role="feature" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" onclick="loadFeature(this);">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="Features\Products\Notifications" data-name="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-role="feature" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" onclick="loadFeature(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td data-collapse="false" class="grid-toggle" title="Toggle Feature" onclick="loadCollapse(this);">
 									<span class="bi bi-chevron-down"></span>
 								</td>
@@ -1852,12 +1907,11 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="02701e4f-9f42-4442-ab6c-e209b78523ee" data-role="scenario" data-tags="Orders @Passed @TA-4000 @Products @BusinessTests @TA-4001 @Review @TR-4001 Features/Products/Notifications/Orders.feature" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-role="scenario" data-tags="Orders @Passed @TA-4000 @Products @BusinessTests @TA-4001 @Review @TR-4001 Features/Products/Notifications/Orders.feature" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="5">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
@@ -1865,12 +1919,11 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="02701e4f-9f42-4442-ab6c-e209b78523ee" data-role="scenario" data-tags="Orders @Passed @TA-4000 @Products @BusinessTests @TA-4002 @Review  Features/Products/Notifications/Orders.feature" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e2a5caca05c9e0508e0589c6bfd5c19b" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-role="scenario" data-tags="Orders @Passed @TA-4000 @Products @BusinessTests @TA-4002 @Review  Features/Products/Notifications/Orders.feature" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e2a5caca05c9e0508e0589c6bfd5c19b" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="5">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
@@ -1878,9 +1931,8 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="Features" data-name="c37f616d-73b8-4115-bab6-f94fa7fec174" data-role="feature" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" onclick="loadFeature(this);">
-								<td></td>
-								<td></td>
+							<tr data-parent="Features" data-name="8a6f9a6f-643b-4526-96db-442d8a68333d" data-role="feature" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" onclick="loadFeature(this);">
+								<td class="grid-indent"></td>
 								<td data-collapse="false" class="grid-toggle" title="Toggle Feature" onclick="loadCollapse(this);">
 									<span class="bi bi-chevron-down"></span>
 								</td>
@@ -1890,10 +1942,9 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="c37f616d-73b8-4115-bab6-f94fa7fec174" data-role="scenario" data-tags="Registration @Passed @TA-2000 @Registration @BusinessTests @TA-2001 @InProgress  Features/Registration.feature" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="1eb4427729b45454b5f84d3ac2d73e73" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="8a6f9a6f-643b-4526-96db-442d8a68333d" data-role="scenario" data-tags="Registration @Passed @TA-2000 @Registration @BusinessTests @TA-2001 @InProgress  Features/Registration.feature" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="1eb4427729b45454b5f84d3ac2d73e73" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="7">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
@@ -1901,10 +1952,9 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="c37f616d-73b8-4115-bab6-f94fa7fec174" data-role="scenario" data-tags="Registration @Failed @TA-2000 @Registration @BusinessTests @TA-2002 @InProgress @Broken  Features/Registration.feature" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="62a2bcc4d66ef0518838494fb0c59e43" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="8a6f9a6f-643b-4526-96db-442d8a68333d" data-role="scenario" data-tags="Registration @Failed @TA-2000 @Registration @BusinessTests @TA-2002 @InProgress @Broken  Features/Registration.feature" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="62a2bcc4d66ef0518838494fb0c59e43" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="7">
 									<span class="bi bi-x-circle-fill color-failed status-symbol"></span>
@@ -1912,10 +1962,9 @@
 								</td>
 								<td class="grid-border align-right"></td>
 							</tr>
-							<tr data-parent="c37f616d-73b8-4115-bab6-f94fa7fec174" data-role="scenario" data-tags="Registration @Passed @TA-2000 @Registration @BusinessTests @TA-2003 @InProgress  Features/Registration.feature" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="5091d0b43e12a8549dc5d3dd0ec45c9b" onclick="loadScenario(this);">
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr data-parent="8a6f9a6f-643b-4526-96db-442d8a68333d" data-role="scenario" data-tags="Registration @Passed @TA-2000 @Registration @BusinessTests @TA-2003 @InProgress  Features/Registration.feature" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="5091d0b43e12a8549dc5d3dd0ec45c9b" onclick="loadScenario(this);">
+								<td class="grid-indent"></td>
+								<td class="grid-indent"></td>
 								<td class="grid-indent"></td>
 								<td class="grid-border" colspan="7">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
@@ -1950,7 +1999,7 @@
 							</tr>
 						</thead>
 						<tbody id="table-list">
-							<tr class="grid-border" data-role="feature" data-tags="@Incomplete Contact Us @TA-3000 @ContactUs @BusinessTests" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" onclick="loadFeature(this);">
+							<tr class="grid-border" data-role="feature" data-tags="@Incomplete Contact Us @TA-3000 @ContactUs @BusinessTests" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" onclick="loadFeature(this);">
 								<td class="align-center" data-status="2">
 									<span class="bi bi-exclamation-circle-fill color-incomplete status-symbol"></span>
 								</td>
@@ -1963,7 +2012,7 @@
 								<td class="align-center" data-coverage="033">33%</td>
 								<td>Incomplete</td>
 							</tr>
-							<tr class="grid-border" data-role="feature" data-tags="@Failed Login @TA-1000 @Login @BusinessTests" data-featureid="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" onclick="loadFeature(this);">
+							<tr class="grid-border" data-role="feature" data-tags="@Failed Login @TA-1000 @Login @BusinessTests" data-featureid="c7932024-74e8-4def-9a4e-2b4a620941e8" onclick="loadFeature(this);">
 								<td class="align-center" data-status="1">
 									<span class="bi bi-x-circle-fill color-failed status-symbol"></span>
 								</td>
@@ -1976,7 +2025,7 @@
 								<td class="align-center" data-coverage="050">50%</td>
 								<td>Failed</td>
 							</tr>
-							<tr class="grid-border" data-role="feature" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" onclick="loadFeature(this);">
+							<tr class="grid-border" data-role="feature" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" onclick="loadFeature(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -1989,7 +2038,7 @@
 								<td class="align-center" data-coverage="100">100%</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="feature" data-tags="@Failed Registration @TA-2000 @Registration @BusinessTests" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" onclick="loadFeature(this);">
+							<tr class="grid-border" data-role="feature" data-tags="@Failed Registration @TA-2000 @Registration @BusinessTests" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" onclick="loadFeature(this);">
 								<td class="align-center" data-status="1">
 									<span class="bi bi-x-circle-fill color-failed status-symbol"></span>
 								</td>
@@ -2027,7 +2076,7 @@
 							</tr>
 						</thead>
 						<tbody id="table-list">
-							<tr class="grid-border" data-role="scenario" data-tags="@Passed Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3001 @Done" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="b4285752d8f11e56b894334546b78c7f" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Passed Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3001 @Done" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="b4285752d8f11e56b894334546b78c7f" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2039,7 +2088,7 @@
 								<td class="align-center" data-duration="00:12:111">12s 111ms</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="scenario" data-tags="@Skipped Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Skipped Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
 								<td class="align-center" data-status="4">
 									<span class="bi bi-dash-circle-fill color-skipped status-symbol"></span>
 								</td>
@@ -2051,7 +2100,7 @@
 								<td class="align-center" data-duration="00:00:000">0s 000ms</td>
 								<td>Skipped</td>
 							</tr>
-							<tr class="grid-border" data-role="scenario" data-tags="@Incomplete Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3003 @Review @Invalid" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="64417f9cf1024556af46f2041fc7334b" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Incomplete Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3003 @Review @Invalid" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="64417f9cf1024556af46f2041fc7334b" onclick="loadScenario(this);">
 								<td class="align-center" data-status="2">
 									<span class="bi bi-exclamation-circle-fill color-incomplete status-symbol"></span>
 								</td>
@@ -2063,7 +2112,7 @@
 								<td class="align-center" data-duration="00:11:696">11s 696ms</td>
 								<td>Incomplete</td>
 							</tr>
-							<tr class="grid-border" data-role="scenario" data-tags="@Failed Login @TA-1000 @Login @BusinessTests @TA-1001 @Done @Regressed" data-featureid="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-scenarioid="04bb23f8b9900f55b0c7615863c762d5" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Failed Login @TA-1000 @Login @BusinessTests @TA-1001 @Done @Regressed" data-featureid="c7932024-74e8-4def-9a4e-2b4a620941e8" data-scenarioid="04bb23f8b9900f55b0c7615863c762d5" onclick="loadScenario(this);">
 								<td class="align-center" data-status="1">
 									<span class="bi bi-x-circle-fill color-failed status-symbol"></span>
 								</td>
@@ -2075,7 +2124,7 @@
 								<td class="align-center" data-duration="00:07:879">7s 879ms</td>
 								<td>Failed</td>
 							</tr>
-							<tr class="grid-border" data-role="scenario" data-tags="@Incomplete Login @TA-1000 @Login @BusinessTests @TA-1002 @Review @Invalid" data-featureid="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-scenarioid="171dbe8822403e548d9f65c673adcfa4" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Incomplete Login @TA-1000 @Login @BusinessTests @TA-1002 @Review @Invalid" data-featureid="c7932024-74e8-4def-9a4e-2b4a620941e8" data-scenarioid="171dbe8822403e548d9f65c673adcfa4" onclick="loadScenario(this);">
 								<td class="align-center" data-status="2">
 									<span class="bi bi-exclamation-circle-fill color-incomplete status-symbol"></span>
 								</td>
@@ -2087,7 +2136,7 @@
 								<td class="align-center" data-duration="00:07:879">7s 879ms</td>
 								<td>Incomplete</td>
 							</tr>
-							<tr class="grid-border" data-role="scenario" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2099,7 +2148,7 @@
 								<td class="align-center" data-duration="00:09:877">9s 877ms</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="scenario" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4002 @Review" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e2a5caca05c9e0508e0589c6bfd5c19b" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4002 @Review" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e2a5caca05c9e0508e0589c6bfd5c19b" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2111,7 +2160,7 @@
 								<td class="align-center" data-duration="00:04:775">4s 775ms</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="scenario" data-tags="@Passed Registration @TA-2000 @Registration @BusinessTests @TA-2001 @InProgress" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="1eb4427729b45454b5f84d3ac2d73e73" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Passed Registration @TA-2000 @Registration @BusinessTests @TA-2001 @InProgress" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="1eb4427729b45454b5f84d3ac2d73e73" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2123,7 +2172,7 @@
 								<td class="align-center" data-duration="00:06:272">6s 272ms</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="scenario" data-tags="@Failed Registration @TA-2000 @Registration @BusinessTests @TA-2002 @InProgress @Broken" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="62a2bcc4d66ef0518838494fb0c59e43" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Failed Registration @TA-2000 @Registration @BusinessTests @TA-2002 @InProgress @Broken" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="62a2bcc4d66ef0518838494fb0c59e43" onclick="loadScenario(this);">
 								<td class="align-center" data-status="1">
 									<span class="bi bi-x-circle-fill color-failed status-symbol"></span>
 								</td>
@@ -2135,7 +2184,7 @@
 								<td class="align-center" data-duration="00:13:139">13s 139ms</td>
 								<td>Failed</td>
 							</tr>
-							<tr class="grid-border" data-role="scenario" data-tags="@Passed Registration @TA-2000 @Registration @BusinessTests @TA-2003 @InProgress" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="5091d0b43e12a8549dc5d3dd0ec45c9b" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="scenario" data-tags="@Passed Registration @TA-2000 @Registration @BusinessTests @TA-2003 @InProgress" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="5091d0b43e12a8549dc5d3dd0ec45c9b" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2170,7 +2219,7 @@
 							</tr>
 						</thead>
 						<tbody id="table-list">
-							<tr class="grid-border" data-role="step" data-tags="@Failed Login @TA-1000 @Login @BusinessTests @TA-1001 @Done @Regressed" data-featureid="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-scenarioid="04bb23f8b9900f55b0c7615863c762d5" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Failed Login @TA-1000 @Login @BusinessTests @TA-1001 @Done @Regressed" data-featureid="c7932024-74e8-4def-9a4e-2b4a620941e8" data-scenarioid="04bb23f8b9900f55b0c7615863c762d5" onclick="loadScenario(this);">
 								<td class="align-center" data-status="1">
 									<span class="bi bi-x-circle-fill color-failed status-symbol"></span>
 								</td>
@@ -2181,7 +2230,7 @@
 								<td class="align-center" data-failure="0100">100%</td>
 								<td>Failed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Failed Registration @TA-2000 @Registration @BusinessTests @TA-2002 @InProgress @Broken" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="62a2bcc4d66ef0518838494fb0c59e43" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Failed Registration @TA-2000 @Registration @BusinessTests @TA-2002 @InProgress @Broken" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="62a2bcc4d66ef0518838494fb0c59e43" onclick="loadScenario(this);">
 								<td class="align-center" data-status="1">
 									<span class="bi bi-x-circle-fill color-failed status-symbol"></span>
 								</td>
@@ -2192,7 +2241,7 @@
 								<td class="align-center" data-failure="0100">100%</td>
 								<td>Failed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Incomplete Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3003 @Review @Invalid" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="64417f9cf1024556af46f2041fc7334b" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Incomplete Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3003 @Review @Invalid" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="64417f9cf1024556af46f2041fc7334b" onclick="loadScenario(this);">
 								<td class="align-center" data-status="2">
 									<span class="bi bi-exclamation-circle-fill color-incomplete status-symbol"></span>
 								</td>
@@ -2203,7 +2252,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Incomplete</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Incomplete Login @TA-1000 @Login @BusinessTests @TA-1002 @Review @Invalid" data-featureid="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-scenarioid="171dbe8822403e548d9f65c673adcfa4" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Incomplete Login @TA-1000 @Login @BusinessTests @TA-1002 @Review @Invalid" data-featureid="c7932024-74e8-4def-9a4e-2b4a620941e8" data-scenarioid="171dbe8822403e548d9f65c673adcfa4" onclick="loadScenario(this);">
 								<td class="align-center" data-status="2">
 									<span class="bi bi-exclamation-circle-fill color-incomplete status-symbol"></span>
 								</td>
@@ -2214,7 +2263,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Incomplete</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Skipped Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Skipped Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
 								<td class="align-center" data-status="4">
 									<span class="bi bi-dash-circle-fill color-skipped status-symbol"></span>
 								</td>
@@ -2225,7 +2274,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Skipped</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Skipped Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Skipped Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
 								<td class="align-center" data-status="4">
 									<span class="bi bi-dash-circle-fill color-skipped status-symbol"></span>
 								</td>
@@ -2236,7 +2285,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Skipped</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Skipped Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore" data-featureid="30c98ebb-9649-47b8-b21e-93b570faf87e" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Skipped Contact Us @TA-3000 @ContactUs @BusinessTests @TA-3002 @Ignore" data-featureid="2de0e161-a1d8-4321-9c7a-7194004b7870" data-scenarioid="8618db5660df6959bf91c10e7a54a677" onclick="loadScenario(this);">
 								<td class="align-center" data-status="4">
 									<span class="bi bi-dash-circle-fill color-skipped status-symbol"></span>
 								</td>
@@ -2247,7 +2296,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Skipped</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Skipped Registration @TA-2000 @Registration @BusinessTests @TA-2002 @InProgress @Broken" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="62a2bcc4d66ef0518838494fb0c59e43" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Skipped Registration @TA-2000 @Registration @BusinessTests @TA-2002 @InProgress @Broken" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="62a2bcc4d66ef0518838494fb0c59e43" onclick="loadScenario(this);">
 								<td class="align-center" data-status="4">
 									<span class="bi bi-dash-circle-fill color-skipped status-symbol"></span>
 								</td>
@@ -2258,7 +2307,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Skipped</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Passed Login @TA-1000 @Login @BusinessTests @TA-1002 @Review @Invalid" data-featureid="203b8a55-54ce-4bc3-9ead-18858dc3dcfe" data-scenarioid="171dbe8822403e548d9f65c673adcfa4" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Passed Login @TA-1000 @Login @BusinessTests @TA-1002 @Review @Invalid" data-featureid="c7932024-74e8-4def-9a4e-2b4a620941e8" data-scenarioid="171dbe8822403e548d9f65c673adcfa4" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2269,7 +2318,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2280,7 +2329,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2291,7 +2340,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2302,7 +2351,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4001 @Review" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e818424478190d5b966f887d8ed1d7b8" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2313,7 +2362,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4002 @Review" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e2a5caca05c9e0508e0589c6bfd5c19b" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4002 @Review" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e2a5caca05c9e0508e0589c6bfd5c19b" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2324,7 +2373,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4002 @Review" data-featureid="02701e4f-9f42-4442-ab6c-e209b78523ee" data-scenarioid="e2a5caca05c9e0508e0589c6bfd5c19b" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Passed Orders @TA-4000 @Products @BusinessTests @TA-4002 @Review" data-featureid="5445400b-0049-4de6-b3d2-9d6d61c7109d" data-scenarioid="e2a5caca05c9e0508e0589c6bfd5c19b" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2335,7 +2384,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Passed Registration @TA-2000 @Registration @BusinessTests @TA-2001 @InProgress" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="1eb4427729b45454b5f84d3ac2d73e73" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Passed Registration @TA-2000 @Registration @BusinessTests @TA-2001 @InProgress" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="1eb4427729b45454b5f84d3ac2d73e73" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2346,7 +2395,7 @@
 								<td class="align-center" data-failure="0000">0%</td>
 								<td>Passed</td>
 							</tr>
-							<tr class="grid-border" data-role="step" data-tags="@Passed Registration @TA-2000 @Registration @BusinessTests @TA-2003 @InProgress" data-featureid="c37f616d-73b8-4115-bab6-f94fa7fec174" data-scenarioid="5091d0b43e12a8549dc5d3dd0ec45c9b" onclick="loadScenario(this);">
+							<tr class="grid-border" data-role="step" data-tags="@Passed Registration @TA-2000 @Registration @BusinessTests @TA-2003 @InProgress" data-featureid="8a6f9a6f-643b-4526-96db-442d8a68333d" data-scenarioid="5091d0b43e12a8549dc5d3dd0ec45c9b" onclick="loadScenario(this);">
 								<td class="align-center" data-status="3">
 									<span class="bi bi-check-circle-fill color-passed status-symbol"></span>
 								</td>
@@ -2363,7 +2412,7 @@
 			</div>
 			
 			<!-- Data Feature -->
-			<div id="30c98ebb-9649-47b8-b21e-93b570faf87e">
+			<div id="2de0e161-a1d8-4321-9c7a-7194004b7870">
 				
 				<!-- Feature Section -->
 				<div class="section">
@@ -2413,7 +2462,7 @@
 			</div>
 			
 			<!-- Data Feature -->
-			<div id="203b8a55-54ce-4bc3-9ead-18858dc3dcfe">
+			<div id="c7932024-74e8-4def-9a4e-2b4a620941e8">
 				
 				<!-- Feature Section -->
 				<div class="section">
@@ -2446,7 +2495,7 @@
 			</div>
 			
 			<!-- Data Feature -->
-			<div id="02701e4f-9f42-4442-ab6c-e209b78523ee">
+			<div id="5445400b-0049-4de6-b3d2-9d6d61c7109d">
 				
 				<!-- Feature Section -->
 				<div class="section">
@@ -2479,7 +2528,7 @@
 			</div>
 			
 			<!-- Data Feature -->
-			<div id="c37f616d-73b8-4115-bab6-f94fa7fec174">
+			<div id="8a6f9a6f-643b-4526-96db-442d8a68333d">
 				
 				<!-- Feature Section -->
 				<div class="section">
@@ -2827,12 +2876,10 @@
 											<br>
 											at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
 											<br>
-											at Reqnroll.Infrastructure.TestExecutionEngine.&lt;&gt;c__DisplayClass57_0.&lt;<executestepasync>b__7&gt;d.MoveNext()
-												<br>--- End of stack trace from previous location ---
-												<br>
-												at Reqnroll.Infrastructure.TestExecutionEngine.&lt;&gt;c__DisplayClass57_0.&lt;<executestepasync>g__HandleStepExecutionExceptions|0&gt;d.MoveNext()<br>
-												</executestepasync>
-											</executestepasync>
+											at Reqnroll.Infrastructure.TestExecutionEngine.&lt;&gt;c__DisplayClass57_0.&lt;&lt;ExecuteStepAsync&gt;b__7&gt;d.MoveNext()
+											<br>--- End of stack trace from previous location ---
+											<br>
+											at Reqnroll.Infrastructure.TestExecutionEngine.&lt;&gt;c__DisplayClass57_0.&lt;&lt;ExecuteStepAsync&gt;g__HandleStepExecutionExceptions|0&gt;d.MoveNext()<br>
 										</div>
 									</div>
 								</div>
@@ -3480,12 +3527,10 @@
 											<br>
 											at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
 											<br>
-											at Reqnroll.Infrastructure.TestExecutionEngine.&lt;&gt;c__DisplayClass57_0.&lt;<executestepasync>b__7&gt;d.MoveNext()
-												<br>--- End of stack trace from previous location ---
-												<br>
-												at Reqnroll.Infrastructure.TestExecutionEngine.&lt;&gt;c__DisplayClass57_0.&lt;<executestepasync>g__HandleStepExecutionExceptions|0&gt;d.MoveNext()<br>
-												</executestepasync>
-											</executestepasync>
+											at Reqnroll.Infrastructure.TestExecutionEngine.&lt;&gt;c__DisplayClass57_0.&lt;&lt;ExecuteStepAsync&gt;b__7&gt;d.MoveNext()
+											<br>--- End of stack trace from previous location ---
+											<br>
+											at Reqnroll.Infrastructure.TestExecutionEngine.&lt;&gt;c__DisplayClass57_0.&lt;&lt;ExecuteStepAsync&gt;g__HandleStepExecutionExceptions|0&gt;d.MoveNext()<br>
 										</div>
 									</div>
 								</div>
@@ -4090,6 +4135,15 @@
 						</table>
 					</div>
 				</div>
+			</div>
+			
+			<!-- Data Properties -->
+			<div id="properties">
+				<div class="section">
+					<span class="page-name" data-testid="page-title">Properties</span>
+				</div>
+				<hr>
+				<hr>
 			</div>
 		</data>
 	</body>
